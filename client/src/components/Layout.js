@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
         <div className="layout">
           <div className="sidebar">
             <div className="logo">
-              <h6 className="text-light">DOC APP</h6>
+              <h6 className="text-light">MEDICLO</h6>
               <hr />
             </div>
             <div className="menu">
@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
                   <>
                     <div className={`menu-item ${isActive && "active"}`}>
                       <i className={menu.icon}></i>
-                      <Link to={menu.path}>{menu.name}</Link>
+                      <Link to={menu.path}><i>{menu.name}</i></Link>
                     </div>
                   </>
                 );
